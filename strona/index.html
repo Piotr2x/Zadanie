@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+
+        <div class="main">
+            <a href="https://github.com/Piotr2x" target="_blank" class="github-icon">
+                <img src="" alt="GitHub" width="24" height="24">
+            </a>
+
+            <a href="" target="_blank" class="school-icon">
+                <img src="" alt="School" width="24" height="24">
+            </a>
+
+            <a href="" target="_blank" class="instagram-icon">
+                <img src="" alt="Instagram" width="24" height="24">
+            </a>
+        </div>
+
+        <div class="napis">Piotr libera</div>
+
+    </div>
+
+    <div class="avatar">
+        <img src="">
+    </div>
+
+    <script>
+        const g_tloContainer = document.createElement('div');
+      g_tloContainer.classList.add('g_tlo-container');
+      document.body.appendChild(g_tloContainer);
+  
+      const createg_tlo = () => {
+          const g_tlo = document.createElement('div');
+          g_tlo.classList.add('g_tlo');
+          g_tloContainer.appendChild(g_tlo);
+  
+          const x = Math.random() * window.innerWidth;
+          const y = window.innerHeight;
+          g_tlo.style.left = `${x}px`;
+          g_tlo.style.top = `${y}px`;
+  
+          const duration = Math.random() * 1 + 3;
+          g_tlo.style.animationDuration = `${duration}s`;
+      };
+      setInterval(createg_tlo, 100);
+  </script>
+
+</body>
+</html>

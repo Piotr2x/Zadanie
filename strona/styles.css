@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+body {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+
+    /* Ustawienie Flexbox na całym ekranie */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% wysokości ekranu */
+}
+
+
+.g_tlo {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 10;
+    animation: g_tlo 10ms linear forwards;
+}
+@keyframes g_tlo {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-500px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-1000px);
+    }
+}
+
+.main {
+    background: rgba(82, 80, 80, 0.281);
+    width: 25vw;
+    height: 15vw;
+    position: relative;
+    border-radius: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+#main img {
+    position: absolute;
+    top: 34%;
+    left: 50.2%;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.avatar img {
+    position: absolute;
+    height: 100px;
+    border-radius: 50px;
+    border: 4px solid #2e2d2d;
+}
+
+.napis {
+color: #fff;
+position: absolute;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  auto;
+    padding: 10px;
+
+}
+
+.main a {
+    position: relative;
+    margin:  1vw;
+    padding: 10px;
+
+}
+
+.github-icon {
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.github-icon:hover {
+    transform: scale(1.1);
+}
+
+.school-icon {
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.school-icon:hover {
+    transform: scale(1.1);
+}
+
+.instagram-icon {
+    border-radius: 50%;
+
+}
+
+.instagram-icon:hover {
+    transform: scale(1.1);
+}
