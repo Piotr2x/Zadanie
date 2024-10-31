@@ -11,17 +11,16 @@
 }
 
 body {
-    background-color: black;
+    background: linear-gradient(120deg, #000000, #08000c);
     background-size: cover;
     background-position: center;
     font-family: Arial, sans-serif;
     overflow: hidden;
 
-    /* Ustawienie Flexbox na całym ekranie */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* 100% wysokości ekranu */
+    height: 100vh;
 }
 
 
@@ -50,9 +49,9 @@ body {
 }
 
 .main {
-    background: rgba(82, 80, 80, 0.281);
-    width: 25vw;
-    height: 15vw;
+    background: rgba(71, 68, 105, 0.281);
+    width: 20vw;
+    height: 10vw;
     position: relative;
     border-radius: 0.5vw;
     display: flex;
@@ -62,67 +61,60 @@ body {
 }
 
 
-#main img {
-    position: absolute;
-    top: 34%;
-    left: 50.2%;
-    height: 100px;
-    border-radius: 50px;
-}
 
-.avatar img {
-    position: absolute;
-    height: 100px;
-    border-radius: 50px;
-    border: 4px solid #2e2d2d;
+#main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    gap: 10px; 
+    height: 100vh; 
 }
 
 .napis {
-color: #fff;
-position: absolute;
+    position: absolute; 
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-25%, 50%); 
+    color: #fff; 
+    text-align: center; 
+    margin: auto; 
+    scale: 2;
 }
 
 .main {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin:  auto;
-    padding: 10px;
-
+    gap: 1px; 
 }
 
 .main a {
     position: relative;
     margin:  1vw;
-    padding: 10px;
+    padding: 5px;
 
 }
 
-.github-icon {
-    border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
+
+.icon {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    background-color: #09000a; 
+    box-shadow: 0 0 2px rgba(12, 0, 17, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.github-icon:hover {
-    transform: scale(1.1);
+.icon img {
+    border-radius: 50%; 
+    max-width: 100%;
+    max-height: 100%; 
 }
 
-.school-icon {
-    border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.school-icon:hover {
-    transform: scale(1.1);
-}
-
-.instagram-icon {
-    border-radius: 50%;
-
-}
-
-.instagram-icon:hover {
-    transform: scale(1.1);
+.icon:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 12px rgba(225, 0, 255, 0.6); 
 }
